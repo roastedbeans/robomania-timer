@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: INTEGRALCF;
-  src: url(/src/Fonts/INTEGRALCF-REGULAR.OTF);
+  src: url(/src/fonts/INTEGRALCF-REGULAR.OTF);
 }
 @font-face {
   font-family: PLANK;
-  src: url(/src/Fonts/PLANK__.TTF);
+  src: url(/src/fonts/PLANK__.TTF);
 }
 @font-face {
   font-family: PS;
-  src: url(/src/Fonts/PRODUCT\ SANS\ BOLD.TTF);
+  src: url(/src/fonts/PRODUCT\ SANS\ BOLD.TTF);
 }
 
 /* Colors Palette */
