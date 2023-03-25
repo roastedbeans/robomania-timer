@@ -2,21 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "/src/fonts/INTEGRALCF-REGULAR.OTF";
-@import "/src/fonts/PLANK__.TTF";
-@import "/src/fonts/PRODUCT SANS BOLD.TTF";
-
 @font-face {
   font-family: INTEGRALCF;
-  src: url(/src/fonts/INTEGRALCF-REGULAR.OTF);
+  src: url("/src/fonts/INTEGRALCF-REGULAR.OTF");
 }
 @font-face {
   font-family: PLANK;
-  src: url(/src/fonts/PLANK__.TTF);
+  src: url("/src/fonts/PLANK__.TTF");
 }
 @font-face {
   font-family: PS;
-  src: url(/src/fonts/PRODUCT\ SANS\ BOLD.TTF);
+  src: url("/src/fonts/PRODUCT\ SANS\ BOLD.TTF");
 }
 
 /* Colors Palette */
