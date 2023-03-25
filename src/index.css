@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "/src/fonts/INTEGRALCF-REGULAR.OTF";
+@import "/src/fonts/PLANK__.TTF";
+@import "/src/fonts/PRODUCT SANS BOLD.TTF";
+
 @font-face {
   font-family: INTEGRALCF;
   src: url(/src/fonts/INTEGRALCF-REGULAR.OTF);
