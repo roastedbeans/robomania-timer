@@ -105,7 +105,7 @@ export const DisplayTimer = ({ setStartAnimation, setToSec }) => {
           name="minutes"
           value={minutes}
           onChange={(e) => forMinutes(e)}
-          className="m-0 pb-[0rem] align-center w-full h-[19rem] box-border text-center display-field drop-shadow-md bg-transparent border-transparent outline-none translate-y-[0rem]"
+          className="m-0 pb-[0rem] align-center w-full h-[19rem] box-border text-center display-field drop-shadow-2xl bg-transparent border-transparent outline-none translate-y-[0rem]"
           disabled={start ? true : false}
         />
         <div className="w-[16rem] h-[10rem] bottom text-center relative">

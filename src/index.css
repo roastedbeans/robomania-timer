@@ -69,6 +69,11 @@ button:enabled {
   border: 1px solid #1460ed;
 }
 
+
+img {
+  pointer-events: none;
+}
+
 @layer base {
   input[type="number"]::-webkit-outer-spin-button,
   input[type="number"]::-webkit-inner-spin-button,
@@ -157,12 +162,13 @@ div.card-container {
   width: 81rem;
   height: 31rem;
   margin-top: 10px;
-  box-shadow: 16px 14px 20px #0000008c;
+  box-shadow: 0px 10px 20px 0px #00000063;
   border-radius: 100px;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  background-color: white;
   align-items: center;
 }
 
@@ -170,6 +176,7 @@ div.card-container-animation {
   position: relative;
   content: "";
   background-image: conic-gradient(transparent 340deg, #1460ed 345deg);
+
   width: 300%;
   height: 600%;
   animation-iteration-count: infinite;
@@ -253,8 +260,80 @@ button:hover {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/*Background*/
+
+.container-background {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  width: 100%;
+}
+
+.background-behind {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+#red {
+  fill: none;
+  opacity: 0.1;
+  stroke: #373737;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#blue {
+  fill: none;
+  opacity: 0.1;
+  stroke: #1460ed;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+#light-blue {
+  fill: none;
+  opacity: 0.2;
+  stroke: #1460ed;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  animation: draw 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.15;
   }
 }
