@@ -37,7 +37,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 200px;
+  min-height: 100vh;
 }
 
 h1 {
@@ -270,13 +270,12 @@ button:hover {
 /*Background*/
 
 .background-behind {
-  justify-content: space-evenly;
   align-items: center;
   align-content: center;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
   background: #ffffff;
   overflow: hidden;
