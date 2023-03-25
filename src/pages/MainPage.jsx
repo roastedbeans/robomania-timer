@@ -25,14 +25,6 @@ export const MainPage = () => {
   console.log(toSec);
   return (
     <>
-      <audio
-        src="/src/assets/buzzer.wav"
-        autostart="false"
-        width="0"
-        height="0"
-        id="sound1"
-        enablejavascript="true"
-      />
       <div className="card-container item-center top-[-16px]">
         <div
           style={{
