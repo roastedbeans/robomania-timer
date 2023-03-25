@@ -94,7 +94,7 @@ export const DisplayTimer = ({ setStartAnimation, setToSec }) => {
     <>
       <div
         style={{ color: totalSeconds == 0 ? "#E71D36" : "white" }}
-        className="select-none cursor-pointer pt-2 flex w-[80rem] h-[20rem] m-0 p-0 justify-between">
+        className="select-none cursor-pointer pt-2 flex w-[70rem]  h-[21rem] m-0 p-0 justify-between">
         <input
           type="number"
           min="0"
@@ -105,11 +105,11 @@ export const DisplayTimer = ({ setStartAnimation, setToSec }) => {
           name="minutes"
           value={minutes}
           onChange={(e) => forMinutes(e)}
-          className="m-0 pb-[2rem] align-center w-full h-[20rem] box-border text-center display-field drop-shadow-md bg-transparent border-transparent outline-none translate-y-[-4rem]"
+          className="m-0 pb-[0rem] align-center w-full h-[19rem] box-border text-center display-field drop-shadow-md bg-transparent border-transparent outline-none translate-y-[0rem]"
           disabled={start ? true : false}
         />
-        <div className="w-[10rem] h-[10rem] bottom text-center relative">
-          <h1 className="select-none center text-[20rem] top-[-5rem] absolute text-center">
+        <div className="w-[16rem] h-[10rem] bottom text-center relative">
+          <h1 className="select-none center text-[22rem] top-[-7rem] absolute text-center">
             :
           </h1>
         </div>
@@ -123,11 +123,11 @@ export const DisplayTimer = ({ setStartAnimation, setToSec }) => {
           name="seconds"
           value={seconds}
           onChange={(e) => forSeconds(e)}
-          className="m-0 pb-[2rem] align-center w-full h-[20rem] box-border text-center display-field drop-shadow-md bg-transparent border-transparent outline-none translate-y-[-4rem]"
+          className="m-0 pb-[0rem] align-center w-full h-[19rem] box-border text-center display-field drop-shadow-md bg-transparent border-transparent outline-none translate-y-[0rem]"
           disabled={start ? true : false}
         />
       </div>
-      <div className="space-x-[10%] space-y-0 translate-y-[-1rem] drop-shadow-lg relative">
+      <div className="space-x-[10%] space-y-0 translate-y-[-.5rem] drop-shadow-lg relative">
         <button
           id="btnStart"
           onClick={() => [
