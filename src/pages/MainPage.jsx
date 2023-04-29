@@ -17,6 +17,8 @@ export const MainPage = () => {
     PlaySound("sound1");
     var animColor = "conic-gradient(#E71D36 340deg, #E71D36 345deg)";
   } else {
+    if (toSec >= 10) PlaySound("sound3");
+    if (toSec < 10 && toSec >= 1) PlaySound("sound2");
     var animColor =
       toSec < 10 && toSec >= 1
         ? "conic-gradient(transparent 340deg, #E71D36 345deg)"
