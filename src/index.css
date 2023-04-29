@@ -38,6 +38,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -267,56 +268,17 @@ button:hover {
   }
 }
 
-/*Background*/
+/* ---- particles.js container ---- */
 
-.background-behind {
-  align-items: center;
-  align-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
+#particles-js {
+  position: absolute;
   width: 100%;
-  z-index: -1;
-  background: #ffffff;
-  overflow: hidden;
-}
-
-#red {
-  fill: none;
-  opacity: 0.1;
-  stroke: #373737;
-  stroke-width: 4;
-  stroke-miterlimit: 10;
-  animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-#blue {
-  fill: none;
-  opacity: 0.1;
-  stroke: #1460ed;
-  stroke-width: 12;
-  stroke-miterlimit: 10;
-  animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-#light-blue {
-  fill: none;
-  opacity: 0.2;
-  stroke: #1460ed;
-  stroke-width: 6;
-  stroke-miterlimit: 10;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 800;
-  animation: draw 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  height: 100%;
+  background-color: #fffffd;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 @keyframes draw {
