@@ -14,6 +14,23 @@ export const DisplayTimer = ({ setStartAnimation, setToSec }) => {
   const btnPause = document.getElementById("btnPause");
   const btnReset = document.getElementById("btnReset");
 
+  document.addEventListener("keydown", (e) => {
+    var name = e.code;
+    if (name == 32 && start == false) {
+      setMinutes(parseInt(minutes));
+      setSeconds(parseInt(seconds));
+      setStart(true);
+    } else if (name == 83 && start == true) {
+      setMinutes(parseInt(minutes));
+      setSeconds(parseInt(seconds));
+      setStartAnimation(false);
+      setStart(false);
+    } else if (name == 82) {
+      setMinutes(storeMin);
+      setSeconds(storeSec);
+      setStart(false);
+    }
+  });
   useEffect(() => {
     if (start === true) {
       setStartAnimation(true);
